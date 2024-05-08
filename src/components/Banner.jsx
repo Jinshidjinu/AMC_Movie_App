@@ -19,7 +19,7 @@ const Banner = () => {
     <p className="description text-white md:ml-4 text-xs ">Try THE SPICY STUNTMAN and embrace the inferno at MacGuffins Bar®!</p>
     <p className="description text-white md:ml-4 text-xs ">Enjoy Patrón Silver mixed with hot jalapeño syrup and finished with sweet citrus when you see THE FALL GUY, now showing.</p>
     <div className="banner-buttons flex gap-4  p-5">
-        <button className="button bg-blue-500 text-white w-32 md:w-48 h-10 flex justify-center items-center gap-2"><FaPlay /> Watch The Trailer</button>
+        <button className="button bg-blue-500 text-white w-32 md:w-48 h-10 p-2 flex justify-center items-center gap-2"><FaPlay/> Watch The Trailer</button>
         <button className="button bg-blue-500 w-32 md:w-48 h-10 text-white">Find Out More</button>
     </div>
 </div>

@@ -5,4 +5,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Nanum+Gothic&display=swap');
 
-
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+  }

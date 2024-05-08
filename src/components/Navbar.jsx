@@ -19,8 +19,8 @@ const Navbar = () => {
        <img src={netflix} alt="logo" />
     <div className='flex bg-black items-center'>
        
-       <input  type="text" className=' rounded-l-md  w-[260px] h-9 text-gray-400 ' placeholder="Search for Movies" />
-       <button className='bg-yellow-400 h-9 w-[30px] rounded-r-md flex justify-center items-center'>
+       <input  type="text" className=' rounded-l-md  w-[260px] h-7 text-gray-400 p-4 outline-none ' placeholder="Search for Movies" />
+       <button className='bg-yellow-400 h-8 w-[30px] rounded-r-md flex justify-center items-center'>
          <FaSearch className='text-black'/>
         </button>
     </div>

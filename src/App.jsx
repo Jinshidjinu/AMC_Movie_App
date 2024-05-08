@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Navbar from './components/Navbar'
 import Banner from './components/Banner';
+import Rowpost from './components/Rowpost';
 import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css'
 
@@ -11,6 +12,7 @@ function App() {
     <div>
        <Navbar/>
        <Banner/>
+       <Rowpost/>
     </div>
   )
 }
