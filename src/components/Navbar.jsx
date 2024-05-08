@@ -19,7 +19,7 @@ const Navbar = () => {
        <img src={netflix} alt="logo" />
     <div className='flex bg-black items-center'>
        
-       <input type="text" className='rounded-l-md  w-[260px] h-9  '/>
+       <input  type="text" className=' rounded-l-md  w-[260px] h-9 text-gray-400 ' placeholder="Search for Movies" />
        <button className='bg-yellow-400 h-9 w-[30px] rounded-r-md flex justify-center items-center'>
          <FaSearch className='text-black'/>
         </button>
@@ -32,21 +32,21 @@ const Navbar = () => {
      
 
       </ul>
+       <div className='text-white flex flex-col text-xs'>
        <AccountCircleIcon className='text-white'/>
+         SignIn
+       </div>
 
        <div onClick={handleNav} className='block md:hidden mr-6 z-20'>
 
-
-
          {nav ? <AiOutlineClose size={20} className='text-white' /> :   <AiOutlineMenu size={20} className='text-white'/> }  
         
-          
        </div>
        
        <div className={nav? 'z-10 fixed h-full top-[80px] w-full ease-out duration-500':'fixed top-[-100%]'}>
              <ul className='p-8 text-2xl w-full bg-black rounded-lg text-white'>
               <div className='flex gap-5'>
-              <img src={stubs} alt="" />
+              <img src={stubs} alt="stubs" />
               <button className='bg-black border-2 hover:text-violet-600 active:text-violet-700 focus:outline-none focus:ring focus:ring-violet-300  rounded-2xl w-[100px] h-[37px] mt-4 font-sans '>Sign in </button>
               <button className='bg-white text-black rounded-2xl w-[100px] h-[37px] mt-4 font-serif hover:bg-blue-500 italic font-thin'>Join Now</button>
               </div>
