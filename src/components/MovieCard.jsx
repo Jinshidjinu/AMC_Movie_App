@@ -4,7 +4,7 @@ import Avesha from '../assets/images/FeaturedImg/Avesham.jpg';
 
 import { BsStarFill, BsStarHalf } from 'react-icons/bs';
 
-function MovieCard() {
+const  MovieCard = () => {
   return (
     <div className="flex flex-col  bg-black">
       <h1 className="text-3xl p-4 text-start text-yellow-500">Actions</h1>
@@ -35,7 +35,7 @@ function MovieCard() {
               <BsStarFill className="text-yellow-500" />
               <BsStarHalf className="text-yellow-500" />
             </div>
-            <h1>1999</h1>
+            <h1 className='text-white'>1999</h1>
           </div>
         </div>
         {/* Add more cards here */}
