@@ -19,7 +19,7 @@ const Rowpost =() =>{
     
       <div className="bg-black">
         <div>
-            <h1 className="font-bold text-white ml-4">Feautured Today</h1>
+            <h1 className="text-[25px] font-sans  text-yellow-500 ml-4 font-bold ">Feautured Today</h1>
         </div>
         <div className="flex p-5 gap-4 overflow-x-scroll overflow-y-hidden scrollbar-hidden" >
         <img src={theIdeaOfYou} alt="" className="w-[200px] h-[320px] rounded" />
