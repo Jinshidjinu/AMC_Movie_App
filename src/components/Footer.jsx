@@ -5,7 +5,7 @@ import { FaSquareYoutube } from "react-icons/fa6";
 const Footer = () =>{
 
     return(
-        <div className="bg-black py-10 sm:pt-16 lg:pt-19   h-[200px] border-t-2 border-gray-600">
+        <div className="bg-black py-10 sm:pt-16 lg:pt-19  h-[200px] border-t-2 border-gray-600">
             <div className="flex gap-11 justify-center h-1">
             <AiFillFacebook className="text-white rounded-3xl text-5xl  hover:text-blue-600 active:text-violet-700 focus:outline-none focus:ring focus:ring-violet-300"/>
             <AiFillInstagram className="text-white text-5xl rounded-3xl  hover:text-blue-600 active:text-violet-700 focus:outline-none focus:ring focus:ring-violet-300"/>
@@ -15,9 +15,9 @@ const Footer = () =>{
              <FaSquareYoutube className="border-zinc-50  hover:text-blue-600 active:text-violet-700 focus:outline-none focus:ring focus:ring-violet-300"/>
             </div>
             <div className="mt-20 md:mt-28 2xl:mt-32"></div>
-            <div className="bg-gray-900 px-4 mx-auto lg:px-8 max-w-full h-[350px] border-t-2 border-gray-900">
+            <div className="bg-gray-900 px-4 mx-auto lg:px-8 max-w-full h-[450px] border-t-2 border-gray-900">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-y-12 gap-x-12 outline-none">
-              <h1 className="text-red-500 font-bold text-xl">AMC Movie APP</h1>
+              <h1 className="text-red-700 font-bold text-xl">AMC Movie APP</h1>
               <div>
                 <p className="font-semibold text-yellow-600">COMPANY</p>
                 <ul className="mt-8 space-y-4 text-gray-200">
@@ -50,10 +50,14 @@ const Footer = () =>{
            </ul>
         </div>
 
-            <div></div>
+         
 
-              </div>
             </div>
+              <div className="mt-20 bg-gray-900 "> 
+                 <h3 className="text-white ">© Copyright 2024 AMC Theatres</h3>
+                 <h3 className="text-white">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</h3>
+                 </div>
+              </div>
         </div>
     )
 }
