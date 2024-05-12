@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import netflix from '../assets/Netflix.svg'
+import netflix from '../../assets/Netflix.svg'
 import {FaSearch} from 'react-icons/fa'
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { Link } from 'react-router-dom';
