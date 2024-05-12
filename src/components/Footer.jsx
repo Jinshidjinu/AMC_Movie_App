@@ -50,10 +50,8 @@ const Footer = () =>{
            </ul>
         </div>
 
-         
-
             </div>
-              <div className="mt-20 bg-gray-900 "> 
+              <div className="mt-20 bg-gray-900 ">
                  <h3 className="text-white ">© Copyright 2024 AMC Theatres</h3>
                  <h3 className="text-white">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</h3>
                  </div>

@@ -1,23 +1,25 @@
-import { useState } from 'react'
-import Navbar from './components/Navbar'
-import Banner from './components/Banner';
-import Rowpost from './components/Rowpost';
-import MovieCard from './components/MovieCard';
-import Footer from './components/Footer';
-import { BrowserRouter as Router } from 'react-router-dom';
+
+import Home from './pages/UserSide/Home'
+import AdminNav from './pages/AdminSide/AdminHome';
+import { BrowserRouter ,Route,Routes } from 'react-router-dom';
 import './App.css'
 
 function App() {
 
 
   return (
-    <div>
-       <Navbar/>
-       <Banner/>
-       <Rowpost/>
-       <MovieCard/>
-       <Footer/>
-    </div>
+    <BrowserRouter>
+    <Routes>
+       {/* UserSIde Routes */}
+      <Route exact path='/home' element={<Home/>}/>
+
+
+
+       {/* AdminSide Routes  */}
+       <Route exact path='/adminhome' element={<AdminNav/>}/>
+    </Routes>
+  
+    </BrowserRouter>
   )
 }
 
