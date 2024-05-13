@@ -17,7 +17,7 @@ const Sidebar = () => {
          </div>
 
          <div className='w-full h-[80px] bg-yellow-700 border border-black flex items-center justify-center text-white'>
-            <Link to="">
+            <Link to="/movieslist">
             <div className="flex ">
               <MdLocalMovies className="text-2xl" />
               <span className="ml-2"> Movies List</span>

@@ -1,28 +1,18 @@
-import React from 'react'
+
 import AdminNav from '../../components/Admin/AdminNav'
 import Sidebar from '../../components/Admin/Sidebar'
-
-import { Formik, Form, Field, ErrorMessage } from 'formik';
-import * as Yup from 'yup';
-
-// const initialValues = {
-//     movieName: '',
-//     description: '',
-//     image: null,
-//     cast: ''
-//   };
-const AddMovies = () => {
-  const handleImageChange = (event) => {
-    const file = event.target.files[0];
-
-    if (file) {
-      const imageUrl = URL.createObjectURL(file);
-      document.getElementById('preview-image').src = imageUrl;
-    }
-  };
-
+const  EditMovie = () => {
+    const handleImageChange = (event) => {
+        const file = event.target.files[0];
+    
+        if (file) {
+          const imageUrl = URL.createObjectURL(file);
+          document.getElementById('preview-image').src = imageUrl;
+        }
+      };
   return (
-    <div>
+    
+ <div>
       <AdminNav />
       <div className='flex'>
         <Sidebar />
@@ -73,14 +63,14 @@ const AddMovies = () => {
               type="submit"
               className="bg-black text-white px-4 py-2 rounded-md hover:text-cyan-500"
             >
-              Add Movie
+              Edit Movie
             </button>
           </div>
         </div>
       </div>
     </div>
-  );
+   
+  )
 }
 
-
-export default AddMovies
+export default EditMovie
