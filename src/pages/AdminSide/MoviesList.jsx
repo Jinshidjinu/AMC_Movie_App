@@ -9,6 +9,7 @@ const MoviesList = () => {
     const handleEditClick = () =>{
         navigate('/editmovies')
     }
+    
   return (
     <div>
       <div>

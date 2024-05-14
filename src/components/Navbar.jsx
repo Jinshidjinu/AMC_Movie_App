@@ -42,7 +42,7 @@ const Navbar = () => {
          {nav ? <AiOutlineClose size={20} className='text-white' /> :   <AiOutlineMenu size={20} className='text-white'/> }  
         
        </div>
-       
+
        <div className={nav? 'z-10 fixed h-full top-[80px] w-full ease-out duration-500':'fixed top-[-100%]'}>
              <ul className='p-8 text-2xl w-full bg-black rounded-lg text-white'>
               <div className='flex gap-5'>

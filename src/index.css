@@ -8,3 +8,11 @@
 .scrollbar-hidden::-webkit-scrollbar {
     display: none;
   }
+
+.background{
+
+  background-image: url('./assets//images/pexels-hngstrm-3137890.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  }

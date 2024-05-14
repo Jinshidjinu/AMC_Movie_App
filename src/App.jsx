@@ -4,6 +4,7 @@ import AdminNav from './pages/AdminSide/AdminHome';
 import AddProductForm from './pages/AdminSide/AddMovies'
 import MoviesList from './pages/AdminSide/MoviesList';
 import EditMovie from './pages/AdminSide/EditMovie';
+import Login from './pages/login';
 import { BrowserRouter ,Route,Routes } from 'react-router-dom';
 import './App.css'
 
@@ -14,6 +15,7 @@ function App() {
     <BrowserRouter>
     <Routes>
        {/* UserSIde Routes */}
+      <Route exact path='/' element={<Login/>}/>
       <Route exact path='/home' element={<Home/>}/>
 
 
