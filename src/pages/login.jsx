@@ -2,10 +2,11 @@ import React from 'react'
 import LogImg from '../assets/images/loginIMG/pexels-pavel-danilyuk-7234304.jpg'
 import { FcGoogle } from "react-icons/fc";
 import { IoEyeOutline } from "react-icons/io5";
+import {Link} from "react-router-dom"
 const Login = () => {
   return (
     <div>
-        <section className='background  bg-gray-300 min-h-screen items-center justify-center p-10  '>
+        <section className='background  bg-gray-300 min-h-screen items-center justify-center p-10 '>
             <div className='bg-gray-200 flex items-center rounded-2xl shadow-lg max-w-3xl p-5 md:ml-[370px] mt-12'>
                <div className='md:w-1/2 px-16'>
                 <h2 className='font-bold text-2xl text-red-900'> Login</h2>
@@ -28,11 +29,13 @@ const Login = () => {
             
              <button className='bg-white border py-2 w-full rounded-xl mt-5 flex justify-center items-center gap-2 text-sm  hover:scale-110 duration-300'><FcGoogle className='text-xl '/> Login With Google </button>
 
-             <p className='mt-5 text-xs border-b border-gray-400 py-6'>Forgot your password?</p>
+             <p className='mt-5 text-xs border-b border-gray-400 py-6 text-blue-600'>Forgot your password?</p>
 
              <div className=' mt-3 text-xs flex justify-between items-center'>
               <p> don't have an account..</p>
+              <Link to="/signup">
               <button className='py-2 px-5 bg-white border rounded-xl  hover:scale-105 duration-300'>Register</button>
+              </Link>
              </div>
                </div>
 

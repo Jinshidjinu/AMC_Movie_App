@@ -1,4 +1,4 @@
-import React from 'react';
+
 import {Link} from 'react-router-dom'
 import { BiSolidImageAdd } from "react-icons/bi";
 import { MdLocalMovies } from "react-icons/md";
