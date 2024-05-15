@@ -1,6 +1,7 @@
 import React from 'react';
 import img from '../assets/images/FeaturedImg/johnwick.jpg';
 import Avesha from '../assets/images/FeaturedImg/Avesham.jpg';
+import { Link } from 'react-router-dom';
 
 import { BsStarFill, BsStarHalf } from 'react-icons/bs';
 
@@ -23,9 +24,9 @@ const  MovieCard = () => {
             <h1>1999</h1>
           </div>
         </div>
-
+          
         <div className="flex flex-col items-center w-[280px] h-[500px]  p-5 bg-black rounded-lg transition-all duration-150 hover:scale-110">
-          <img src={Avesha} alt="" className="rounded-lg w-full h-[400px] object-cover" />
+         <Link to='/moviesdetails'> <img src={Avesha} alt="" className="rounded-lg w-full h-[400px] object-cover" /></Link>
           <div className="flex flex-row justify-center items-center mt-5 ">
             <h1 className="text-white">hello</h1>
             <div className="flex">

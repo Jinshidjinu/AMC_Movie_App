@@ -12,13 +12,15 @@ const Login = () => {
                 <h2 className='font-bold text-2xl text-red-900'> Login</h2>
                 <p className='text-sm mt-4'>If you already a member, easily log in</p>
 
-                <form action="" className='flex flex-col gap-4'>
+                <form action="" className='flex flex-col gap-3'>
                   <input className='p-2 mt-8 rounded-xl border' type="text" name='email' placeholder='Email' />
                   <div className='relative'>
                   <input className='p-2 mt-8 rounded-xl border w-full' type="password" name='password' placeholder='password'  />
                   <IoEyeOutline className='absolute top-1/2 right-3 transulate-y-1/2 text-gray-400  mt-2'/>
                   </div>
-                  <button className='bg-red-900 rounded-xl text-white py-2 hover:scale-110 duration-300'>Login</button>
+                
+                  <button className='bg-red-900 rounded-xl text-white py-2 hover:scale-110 duration-300 mt-2'>  <Link to='/home'>Login </Link></button>
+                
                 </form>
 
                 <div className='mt-10 grid grid-cols-3 items-center'>
