@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const AdminNav = () => {
   return (
-    <div className='navbar bg-black min-h-[45px] max-w-[1600px] md:mx-auto flex justify-between items-center fixed top-0 left-0 right-0 z-50'>
+    <div className='navbar bg-black min-h-[45px] max-w-[1600px] md:mx-auto flex justify-between items-center '>
       <img src={netflix} alt="logo" />
       <div className='flex bg-black items-center'>
         <input

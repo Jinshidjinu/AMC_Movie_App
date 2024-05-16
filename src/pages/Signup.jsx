@@ -57,7 +57,8 @@ const Signup = () => {
       email: formData.email,
       phone: formData.phone,
       password: formData.password,
-      confirmPassword: formData.confirmPassword
+      confirmPassword: formData.confirmPassword,
+      role:'user'
     };
 
     // Retrieve existing users' data from localStorage

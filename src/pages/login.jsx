@@ -3,7 +3,30 @@ import LogImg from '../assets/images/loginIMG/pexels-pavel-danilyuk-7234304.jpg'
 import { FcGoogle } from "react-icons/fc";
 import { IoEyeOutline } from "react-icons/io5";
 import {Link} from "react-router-dom"
+import { useForm } from 'react-hook-form';
 const Login = () => {
+
+const {register, handleSubmit,setError,formState : {errors}} = useForm();
+const onSubmit = (data) => {
+  const existingUsers = JSON.parse(localStorage.getItem('users')) || [];
+  const user = existingUsers.find((user) => user.email === data.email);
+
+  if (user && user.password === data.password) {
+    console.log('User found:', user);
+
+    if (user.role && user.role === 'Admin') {
+      console.log('Admin logged in');
+      window.location.href = '/adminhome'; // Redirect to admin dashboard
+    } else {
+      console.log('Regular user logged in');
+      window.location.href = '/home'; // Redirect to regular userhome
+    }
+  } else {
+    console.log('Invalid credentials');
+    setError('password', { type: 'manual', message: 'Invalid email or password. Please try again.' });
+  }
+};
+
   return (
     <div>
         <section className='background  bg-gray-300 min-h-screen items-center justify-center p-10 '>
@@ -12,14 +35,29 @@ const Login = () => {
                 <h2 className='font-bold text-2xl text-red-900'> Login</h2>
                 <p className='text-sm mt-4'>If you already a member, easily log in</p>
 
-                <form action="" className='flex flex-col gap-3'>
-                  <input className='p-2 mt-8 rounded-xl border' type="text" name='email' placeholder='Email' />
+                <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-3'>
+                  <input 
+                  className='p-2 mt-8 rounded-xl border'
+                   type="text" 
+                   name='email' 
+                   placeholder='Email'
+                   {...register('email', {required:'Email is required '})}
+                   />
+                   {errors.email && <p className='text-red-600 mt-1'>{errors.email.message}</p>}
+
                   <div className='relative'>
-                  <input className='p-2 mt-8 rounded-xl border w-full' type="password" name='password' placeholder='password'  />
+                  <input 
+                  className='p-2 mt-8 rounded-xl border w-full' 
+                  type="password" 
+                  name='password' 
+                  placeholder='password'
+                  {...register('password',{required:'Password is required'})}
+                  
+                  />
                   <IoEyeOutline className='absolute top-1/2 right-3 transulate-y-1/2 text-gray-400  mt-2'/>
                   </div>
-                
-                  <button className='bg-red-900 rounded-xl text-white py-2 hover:scale-110 duration-300 mt-2'>  <Link to='/home'>Login </Link></button>
+                {errors.password && <p className='text-red-600 mt-1 '>{errors.password.message}</p>}
+                  <button className='bg-red-900 rounded-xl text-white py-2 hover:scale-110 duration-300 mt-2'>Login</button>
                 
                 </form>
 
