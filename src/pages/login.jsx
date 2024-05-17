@@ -19,8 +19,9 @@ const onSubmit = (data) => {
       window.location.href = '/adminhome'; // Redirect to admin dashboard
     } else {
       console.log('Regular user logged in');
-      window.location.href = '/home'; // Redirect to regular userhome
+      window.location.href = '/home';     // Redirect to regular userhome
     }
+    
   } else {
     console.log('Invalid credentials');
     setError('password', { type: 'manual', message: 'Invalid email or password. Please try again.' });
