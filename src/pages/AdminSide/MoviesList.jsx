@@ -73,7 +73,7 @@ const MoviesList = () => {
                       width: "200",
                       playerVars: { mute: 0, autoplay:0},
                      
-                    }}
+                    }}  
     />
                     </td>
                   <td className='border border-gray-400 px-4 py-2 text-center'><button className='bg-green-800 w-[60px] rounded-md text-white' onClick={handleEditClick}>Edit</button></td>
